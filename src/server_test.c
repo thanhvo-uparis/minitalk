@@ -10,7 +10,7 @@ void handle_signal(int sig) {
         received_char |= (0x01 << bit_count);
     }
     bit_count++;
-
+	printf("bit: %d and decimal:[%d]\n", bit_count, received_char);
     if (bit_count == 8) {
         printf("Serveur : Caractère reçu : '%c'\n", received_char);
 
